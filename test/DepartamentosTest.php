@@ -111,7 +111,7 @@ class DepartamentosTest extends TestCase
         $this->assertNotEmpty($dep->updated);
         $this->assertNotEmpty($dep->created);
         $this->assertNotEmpty($dep->firma);
-        $this->assertNotEmpty($dep->ispublico);
+        $this->assertTrue($dep->ispublico);
         $this->assertNotEmpty($dep->autorespemail);
         $this->assertNotEmpty($dep->depid);
         $this->assertEquals("Taller de Informatica", $dep->nombre);
