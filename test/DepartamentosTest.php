@@ -107,7 +107,7 @@ class DepartamentosTest extends TestCase
         $dep->Update();
         $this->assertNotNull($dep);
         $this->assertNotEmpty($dep->nombreresponsable);
-        $this->assertNotEmpty($depnew->nombre);
+        $this->assertNotEmpty($dep->nombre);
         $this->assertNotEmpty($dep->updated);
         $this->assertNotEmpty($dep->created);
         $this->assertNotEmpty($dep->firma);
