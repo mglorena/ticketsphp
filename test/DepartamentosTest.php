@@ -123,6 +123,12 @@ class DepartamentosTest extends TestCase
         $this->assertGreaterThan(2,sizeof($list));
         $dep = $list[0];
         $this->assertEquals("Automotores", $dep->nombre);
-        
+        $this->assertNotEmpty($dep->nombreresponsable);
+        $this->assertNotEmpty($dep->nombre);
+        $this->assertNotEmpty($dep->updated);
+        $this->assertNotEmpty($dep->created);
+        $this->assertNotEmpty($dep->firma);
+        $this->assertNotEmpty($dep->autorespemail);
+        $this->assertNotEmpty($dep->depid);
     }
 }
